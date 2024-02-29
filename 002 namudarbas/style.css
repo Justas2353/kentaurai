@@ -1,0 +1,20 @@
+.hermio {
+    color: blue;
+}
+
+.sarasas {
+    color: orange;
+}
+
+.listas {
+    color: green;
+}
+
+.gr {
+    color: blueviolet;
+}
+
+table {
+    display: inline-block;
+    width: 33%;
+}
