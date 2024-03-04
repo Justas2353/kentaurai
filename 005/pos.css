@@ -1,0 +1,59 @@
+.parent  {
+    width: 700px;
+    height: 700px;
+    background-color: gray;
+    position: relative; 
+    left: 500px;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+
+}
+
+.circle.red {
+    background-color: red;
+    position: absolute; 
+    left: 200px;
+    top: 200px;
+}
+
+.circle.green {
+    background-color: green;
+}
+
+.btn {
+    font-size: 50px;
+    padding: 30px 15px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn svg {
+    width: 80px;
+    height: 80px;
+}
+
+.btn span {
+    position: relative;
+    top: -20px;
+    left: 20px;
+    transition: all 0.3s;
+
+}
+
+.btn:hover svg {
+    top: -20px;
+    left: -40px;
+    fill: salmon;
+}
+
+.btn:hover span {
+    top: 20px;
+    left: 40px;
+}
