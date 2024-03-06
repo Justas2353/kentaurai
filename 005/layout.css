@@ -1,10 +1,11 @@
 :root {
-    --img: 500px;
-    --img2: 300px;
+    --img: 300px;
+    --img2: 500px;
 }
 
 body {
     margin: 0;
+    font-family: "Oswald", sans-serif;
 }
 
 .layout {
@@ -99,13 +100,14 @@ img {
     width: var(--img);
     position: relative;
     margin: 20px;
-    height: 290px;
+    height: 170px;
     overflow: hidden;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
     .img-container2 {
         width: var(--img2);
+        height: 290px;
     }
 }
 
@@ -126,8 +128,21 @@ img {
     transition: all 0.5s;
 }
 
+@media only screen and (min-width: 700px) {
+
+    .img-container2 .img22 {
+        left: calc(var(--img2) + 40px);
+    }
+}
+
 .img-container2:hover .img12 {
     left: calc(-1 * (var(--img) + 20px));
+}
+
+@media only screen and (min-width: 700px) {
+    .img-container2:hover .img12 {
+        left: calc(-1 * (var(--img2) + 20px));
+    }
 }
 
 .img-container2:hover .img22 {
@@ -141,7 +156,37 @@ img {
 
 .about .text {
     width: 100%;
+    position: relative;
 }
+
+.about .text h2::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    border-radius: 50%;
+    position: relative;
+    bottom: 10px;
+}
+
+.about .text h2::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: pink;
+    border-radius: 50%;
+    position: relative;
+    bottom: 10px;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+    .about .text {
+        width: 100%;
+    }
+} */
 
 @media only screen and (min-width: 600px) {
     .about .text {
@@ -151,6 +196,7 @@ img {
         font-size: 30px;
     }
 }
+
 
 @media only screen and (min-width: 900px) {
     .about .text {
@@ -164,6 +210,7 @@ img {
 .desktop-menu {
     display: none;
 }
+
 
 .burger-holder {
     display: flex;
@@ -181,6 +228,8 @@ img {
     }
 }
 
+
+
 .burger {
     display: flex;
     flex-direction: column;
@@ -189,9 +238,8 @@ img {
     height: 40px;
     cursor: pointer;
     position: relative;
-    z-index: 1000;
 }
- 
+
 .burger div {
     width: 100%;
     height: 5px;
