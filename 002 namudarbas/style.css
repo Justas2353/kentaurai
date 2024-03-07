@@ -14,7 +14,7 @@
     color: blueviolet;
 }
 
-table {
-    display: inline-block;
-    width: 33%;
+td {
+    display: flex;
+    width: 33.333%;
 }
