@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.topLine {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+}
+
+.learnMore {
+    border-bottom: 2px solid white;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+section header .logo {
+    font-size: 30px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+section header .logo span {
+    color: rgb(31, 187, 127);
+}
+
+section header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    gap: 60px;
+    margin-right: 50px;
+}
+
+section header ul li {
+   list-style: none;
+}
+
+section header ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+section header ul li a:hover {
+    color: rgb(152, 255, 152);
+}
+
+.topHeadBtn {
+    padding: 10px 25px;
+    border: 3px solid rgb(152, 255, 152);
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.topHeadBtn:hover {
+    background: rgb(152, 255, 152);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(152, 255, 152);
+    clip-path: circle(370px at left -220px);
+    z-index: -1;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(152, 255, 152);
+    clip-path: circle(280px at right 850px);
+    z-index: -1;
+}
+
+section .texts h1 {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    font-size: 100px;
+    color: #6a6666;
+}
+
+section .texts h1 span {
+    color: rgb(152, 255, 152);
+}
+
+section .texts p {
+    width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    line-height: 26px;
+    text-align: justify;
+}
+
+section .backgroundImg img {
+    width: 750px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-left: 25px;
+}
