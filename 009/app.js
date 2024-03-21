@@ -136,3 +136,6 @@ if (o > 5 && o < 10) {
 } else {
     console.log('NO O');
 }
+
+
+console.log("'1' == 1:", '1' == 1);
