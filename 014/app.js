@@ -26,10 +26,8 @@ console.clear();
 // 3. Atspausdinti lyginius skaičius nuo 0 iki 100
 console.log('--------3--------')
 
-for (let i = 0; i <= 100; i++) {
-    if (i % 2 === 0) {
+for (let i = 0; i <= 100; i += 2) {
         console.log(i);
-    }
 }
 
 console.clear();
@@ -64,7 +62,7 @@ console.clear();
 console.log('--------6--------')
 
 let sum = 0;
-for (let i = 1; i <= 200; i++) {
+for (let i = 1; i <= 100; i++) {
     sum += i;
 }
 
