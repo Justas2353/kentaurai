@@ -26,7 +26,6 @@ reset.addEventListener('click', function(){
 });
 
 
-
 const setColor = () => {
     if(count.innerHTML > 0) {
         count.style.color = "yellow"
