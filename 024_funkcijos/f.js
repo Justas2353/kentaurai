@@ -133,3 +133,56 @@ console.log('hasOna:', hasOna);
 
 console.clear();
 
+
+
+
+
+const catsAndOwners = [
+    { cat: 'Fluffy', owner: 'Jonas', color: 'white' },
+    { cat: 'Garfield', owner: 'Petras', color: 'orange' },
+    { cat: 'Marmaduke', owner: 'Ona', color: 'black' },
+    { cat: 'Tom', owner: 'Agota', color: 'grey' },
+    { cat: 'Jerry', owner: 'Asta', color: 'grey' },
+    { cat: 'Sylvester', owner: 'Vytas', color: 'black' },
+];
+
+
+// 1. atspausdinti visus šeimininkus
+
+catsAndOwners.forEach(catAndOwner => console.log(catAndOwner.owner));
+
+console.clear();
+
+// 2. išrinkti visus pilkus katinus
+
+const greyCats = catsAndOwners.filter(catAndOwner => catAndOwner.color == 'grey');
+
+console.log(greyCats);
+
+console.clear();
+
+
+// 4. prie visų kačių pridėti savybę "age" su atsitiktine reikšme nuo 1 iki 18
+
+const catsWithAge = catsAndOwners.map(catAndOwner => ({ ...catAndOwner, age: rand(1, 18) }));
+
+console.table(catsWithAge);
+console.table(catsAndOwners);
+
+console.clear();
+
+
+// 3. pasendinti visus kačiukus vienais metais
+
+const oldCats = catsWithAge.map(catAndOwner => ({ ...catAndOwner, age: catAndOwner.age + 1 }));
+
+console.table(catsWithAge);
+console.table(oldCats);
+
+console.clear();
+
+// 5. išrūšiuoti kačiukus pagal amžių nuo jauniausio iki vyriausio naujame masyve
+
+const sortedCats = catsWithAge.toSorted((a, b) => a.age - b.age);
+
+console.table(sortedCats);

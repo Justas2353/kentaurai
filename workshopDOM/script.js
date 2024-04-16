@@ -11,8 +11,6 @@ add.addEventListener('click', function(){
 });
 
 
-
-
 const substractFunc = () => {
     count.innerHTML--
 };

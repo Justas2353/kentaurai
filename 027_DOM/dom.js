@@ -45,7 +45,39 @@ window.addEventListener('load', _ => {
     });
 
 //Racoon ir Fox prie pavadinimo pridėti uodegą "----*"
+    animals2.forEach(a => {
+        if (a.innerText == 'Racoon' || a.innerText == 'Fox') {
+            a.innerText += '----*';
+        }
+    });
 
 
+
+    const button = document.querySelector('button');
+    button.addEventListener('click', e => {
+        console.log('ku ku', e.target)
+    });
+
+    button.addEventListener('mouseenter', e => {
+        console.log('Opa', e.target)
+    });
+
+
+
+//Kvadratas raudonas 100X100 kai paspaudi ant jo pasidaro oranžinis
+
+    const red =  document.querySelector('.red');
+
+    red.addEventListener('click', _ => {
+        if (red.dataset.squareColor == 'blue') {
+            red.dataset.squareColor = 'red';
+            red.style.backgroundColor = '#dc143c66';
+            red.style.borderColor = '#dc143c';
+        } else {
+            red.dataset.squareColor = 'blue';
+            red.style.backgroundColor = '#87ceeb66';
+            red.style.borderColor = '#87ceeb';
+        }
+    });
 
 });
