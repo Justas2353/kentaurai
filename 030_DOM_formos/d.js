@@ -84,6 +84,22 @@ document.querySelector('.go').addEventListener('click', _ => {
     console.log(value);
 });
 
+// 3. Pasirinkus iš sąrašo skaičių jį pridėti prie bendros sumos
+
+const sumTag = document.querySelector('.sum');
+
+document.querySelector('button.add').addEventListener('click', _ => {
+
+    document.querySelectorAll('.digits [type="radio"]').forEach(c => {
+        if (c.checked) {
+            let sum = parseInt(sumTag.innerText);
+            const value = parseInt(c.value);
+            sum += value;
+            sumTag.innerText = sum; 
+        }
+    });
+
+});
 
 
 });
