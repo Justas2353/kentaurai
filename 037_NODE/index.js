@@ -1,12 +1,10 @@
 const express = require('express');
 const app = express();
 const port = 80;
+app.use(express.static('public'));
 
 // Router
-app.get('/', (req, res) => {
-    const content = '<h1>Bla Bla<h1>';
-  res.send(content);
-});
+
 
 app.get('/bebras', (req, res) => {
     const content = '<h1>Labas Bebrai!<h1>';
